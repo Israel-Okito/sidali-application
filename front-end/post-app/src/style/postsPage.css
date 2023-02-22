@@ -1,0 +1,75 @@
+.posts-section{
+    background-color: rgb(237, 250, 246);
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+.line{
+  display:inline-block;
+  width:35px;
+  height:35px;
+  background-color: #fa940f;
+  border-radius: 35px;
+}
+.load .line:nth-last-child(1){
+    animation: loading 1.5s 1s infinite;
+}
+.load .line:nth-last-child(2){
+    animation: loading 1.5s 0.5s infinite;
+}
+.load .line:nth-last-child(3){
+    animation: loading 1.5s 0s infinite;
+}
+.load {
+    animation-delay: 0.5s;
+}
+@keyframes loading{
+    0%{
+        width: 15px;
+    }
+    50%{
+        width: 35px;
+    }
+    100%{
+        width: 15px;
+    }
+}
+
+.post-content .imagea{
+    background-color: #fa940f;
+    max-width: 100% ;
+    border-radius: 0px 0px 10px 10px;
+    height: 100%;
+
+}
+.post-content p{
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px;
+  
+}
+.postbouton{
+    display:flex;
+    justify-content: center;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128),rgba(56,2,155,0));
+    border-image-slice: 1;
+    width: 100%;
+}
+ button{
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    margin: 30px;
+   background-color: rgb(163, 224, 204);
+   cursor: pointer;
+   
+   
+}
+
+.post-content > button:hover{
+    background-color: rgb(204, 221, 216);
+}

@@ -1,0 +1,30 @@
+.login-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-main_container{
+    width: 30%;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-bottom_container{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+
+    .login-main_container{
+        width: 80%;
+    }
+
+}
